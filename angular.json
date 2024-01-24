@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-pro-angular-lite": {
+    "judge-gina-russo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "jgr",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -20,7 +20,7 @@
             "allowedCommonJsDependencies": [
               "apexcharts"
             ],
-            "outputPath": "dist/material-pro-angular-lite",
+            "outputPath": "dist/judge-gina-russo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "material-pro-angular-lite:build:production"
+              "buildTarget": "judge-gina-russo:build:production"
             },
             "development": {
-              "buildTarget": "material-pro-angular-lite:build:development"
+              "buildTarget": "judge-gina-russo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "material-pro-angular-lite:build"
+            "buildTarget": "judge-gina-russo:build"
           }
         },
         "test": {
